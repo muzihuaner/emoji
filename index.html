@@ -6,14 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <title>快点符号-表情符号-特殊符号</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="emoji.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="content">
-            <h1><a href="#" class="brand">快点符号</a></h1>
-        </div>
+        <nav class="bg-white shadow-md">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <!-- Brand -->
+                    <div class="text-2xl font-bold text-gray-800">
+                        快点符号
+                    </div>
+        
+                    <!-- Navigation Links -->
+                    <div class="hidden md:flex space-x-6">
+                        <a href="/" class="text-gray-800 hover:text-gray-600">首页</a>
+                        <a href="https://zh.wikipedia.org/zh-cn/%E7%B9%AA%E6%96%87%E5%AD%97" class="text-gray-800 hover:text-gray-600">Wiki</a>
+                    </div>
+        
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden">
+                        <button class="text-gray-800 focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <nav>
         <div class="content">
