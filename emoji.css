@@ -1,0 +1,577 @@
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+input,
+textarea,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+input,
+textarea,
+button {
+  display: block;
+}
+img {
+  width: auto\9;
+  display: block;
+  -ms-interpolation-mode: bicubic;
+}
+em,
+i {
+  font-style: normal;
+}
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+  background: #f5f7ff;
+}
+a {
+  color: #3a3a40;
+  text-decoration: none;
+}
+a:hover {
+  color: #503bff;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-size: 100%;
+}
+input::-webkit-input-placeholder {
+  color: #666;
+  font-size: 1.6rem;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+select:focus,
+select:active,
+select:hover {
+  outline: none;
+}
+input,
+button,
+textarea {
+  font-family: Arial, sans-serif;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+a:link,
+a:active,
+a:visited,
+a:hover {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+.clear:after,
+ul:after,
+.emoji-list:after,
+.emoji-note:after {
+  content: "";
+  display: block;
+  width: 100%;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+body {
+  font: 1.4rem/1.5 Helvetica, arial, sans-serif;
+  color: #3f3f3f;
+  background: #f5f7ff;
+}
+html:lang(ar) {
+  direction: rtl;
+}
+.content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.emoji {
+  font-family: apple color emoji, segoe ui emoji, noto color emoji,
+    android emoji, emojione mozilla, twemoji mozilla, noto emoji,
+    segoe ui symbol, EmojiSymbols, sans-serif;
+}
+header {
+  height: 6.2rem;
+  line-height: 6rem;
+  background: #67e;
+  background-image: linear-gradient(141deg, #56f, #67e 60%, #86f);
+  color: #fff;
+}
+header h1,
+header h2,
+header .brand {
+  font-size: 1.9rem;
+  color: #fff;
+}
+header h1 span,
+header h2 span {
+  font-weight: 200;
+}
+header .content {
+  position: relative;
+}
+header .language {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+header .language span {
+  display: block;
+  padding: 1.9rem 2.4rem;
+  border: solid rgba(255, 255, 255, 0.12);
+  border-width: 0 1px;
+}
+header .language svg {
+  fill-rule: evenodd;
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #fff;
+  display: block;
+}
+header .language .languages {
+  display: none;
+  position: absolute;
+  z-index: 999999;
+  right: 0;
+  top: 5.5rem;
+  line-height: 3.4rem;
+  background: #fff;
+  font-size: 1.3rem;
+  padding: 1rem 0.8rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.3rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+header .languages a {
+  display: block;
+  padding: 0 2.4rem;
+  border-radius: 0.2rem;
+}
+header .language:hover .languages {
+  display: block;
+}
+header .language a:hover {
+  background: #f5f7ff;
+}
+header .language a.active {
+  background: #67f;
+  color: #fff;
+}
+html:lang(ar) header .language {
+  left: 0;
+  right: auto;
+}
+html:lang(ar) header .language .languages {
+  left: 0;
+  right: auto;
+}
+html:lang(ar) .emoji-note li {
+  float: right;
+}
+nav {
+  background: #fff;
+  padding: 1rem 0 1.4rem;
+}
+#category {
+  display: table;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
+#category li {
+  display: table-cell;
+  width: auto;
+}
+#category li a {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 1rem 0;
+}
+#category .active a {
+  color: #56f;
+}
+#category li .emoji {
+  display: inline-block;
+  font-size: 1.6rem;
+  margin-right: 0.4rem;
+}
+@media all and (max-width: 760px) {
+  header h1 span,
+  header h2 span {
+    display: none;
+  }
+  .content {
+    width: 100%;
+    margin: none;
+    padding: 0 1.8rem;
+  }
+  #category {
+    display: block;
+    text-align: left;
+  }
+  #category li {
+    float: left;
+    width: 33.33%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 1.3rem;
+  }
+  #category li a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0.8rem 0;
+  }
+  #category li .emoji {
+    font-size: 1.3rem;
+    margin-right: 0.2rem;
+  }
+}
+.head h1 {
+  text-align: center;
+  font-size: 2.9rem;
+  padding: 3.6rem 0 0.2rem;
+  line-height: 1.4em;
+}
+section {
+  padding: 1rem 0;
+}
+section h1 {
+  text-align: center;
+  font-size: 2.9rem;
+  padding: 3rem 0 3.4rem;
+}
+section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 1.5rem 0 2.6rem;
+}
+section h2 a {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 0.4rem;
+  border: 1px solid #f0f1f5;
+  background: #fff;
+}
+.emoji-list {
+  margin: 0 -0.2rem;
+}
+.emoji-list li {
+  display: block;
+  float: left;
+  width: 6.25%;
+  width: calc(100% / 18);
+  text-align: center;
+  padding: 0.4rem 0.2rem;
+  cursor: pointer;
+}
+.emoji-list li div {
+  display: block;
+  border-radius: 0.3rem;
+  padding: 0.6rem 0.3rem 1rem;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  position: relative;
+}
+.emoji-list li span {
+  display: block;
+  text-align: center;
+  font-size: 3.4rem;
+  line-height: 5.2rem;
+  overflow: hidden;
+  font-weight: 400;
+  white-space: nowrap;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+.emoji-list li p {
+  display: none;
+  position: absolute;
+  bottom: 7.5rem;
+  left: -2.7rem;
+  width: 12rem;
+  z-index: 999999;
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  line-height: 1.6rem;
+  height: auto;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+}
+.emoji-list li:hover div {
+  background: #fff;
+}
+.emoji-list li:hover span {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.emoji-list li:hover p {
+  display: block;
+}
+.emoji-note {
+  margin: 0 -0.5rem;
+}
+.emoji-note li {
+  display: block;
+  float: left;
+  width: 16.66%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.emoji-note li div {
+  display: flex;
+  border-radius: 0.3rem;
+  padding: 2rem 1.5rem 2rem 1.8rem;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  position: relative;
+  background: #fff;
+  border-radius: 0.6rem;
+}
+.emoji-note li span {
+  display: block;
+  text-align: center;
+  font-size: 3.4rem;
+  line-height: 1em;
+  height: 4rem;
+  font-weight: 400;
+  white-space: nowrap;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+.emoji-note li p {
+  height: 4rem;
+  font-size: 1.2rem;
+  padding: 0.1rem 0 0 1.2rem;
+  line-height: 1.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #7a7a86;
+  text-transform: capitalize;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+.emoji-note li:hover div {
+  background: #fff8de;
+}
+.emoji-note li:hover span {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.emoji-note li:hover p {
+  color: #967d4c;
+}
+.emoji-note .more a {
+  display: block;
+  height: 8rem;
+  padding: 1rem 1.8rem;
+  text-align: center;
+  background: #e8ebf9;
+  border-radius: 0.6rem;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 300ms;
+}
+.emoji-note .more a:hover {
+  background: #67f;
+  color: #fff;
+}
+@media all and (max-width: 760px) {
+  .head h1 {
+    font-size: 2.4rem;
+  }
+  .emoji-list {
+    margin: 0 -1.8rem;
+    padding: 0.2rem;
+  }
+  .emoji-list li {
+    width: 20%;
+    padding: 0.2rem;
+  }
+  .emoji-list li div {
+    background: #fff;
+  }
+  .emoji-list li span {
+    font-size: 3.2rem;
+    line-height: 5.6rem;
+  }
+  .emoji-list li:hover p {
+    display: none;
+  }
+  .emoji-note {
+    margin: 0 -1.8rem;
+    padding: 0 0.3rem;
+  }
+  .emoji-note li {
+    width: 50%;
+    padding: 0.3rem;
+  }
+  .emoji-note li span {
+    font-size: 3.2rem;
+  }
+  .emoji-note li p {
+    -webkit-line-clamp: 3;
+  }
+}
+footer {
+  margin-top: 5rem;
+  padding: 5rem 0;
+  text-align: center;
+  border-top: 1px solid #e8eaf3;
+}
+#status-message {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  display: flex;
+  line-height: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  background: rgba(49, 236, 141, 0.94);
+  border-radius: 5rem;
+  padding: 1.6rem 4rem 1.6rem 3.3rem;
+  -webkit-transform: translate(-50%, 100%);
+  transform: translate(-50%, 100%);
+  -webkit-transition: opacity 200ms ease, -webkit-transform 200ms ease;
+  transition: opacity 200ms ease, -webkit-transform 200ms ease;
+  transition: transform 200ms ease, opacity 200ms ease;
+  transition: transform 200ms ease, opacity 200ms ease,
+    -webkit-transform 200ms ease;
+  opacity: 0;
+  white-space: nowrap;
+}
+#status-message.visible {
+  -webkit-transform: translate(-50%, -220%);
+  transform: translate(-50%, -220%);
+  opacity: 1;
+}
+#status-message span {
+  display: inline-block;
+  font-size: 3rem;
+  margin-right: 0.5rem;
+}
+html:lang(ar) body {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+html:lang(ar) #category li .emoji {
+  margin: 0 0 0 0.6rem;
+}
+html:lang(ar) header .language {
+  left: 0;
+  right: auto;
+}
+html:lang(ar) header .language .languages {
+  left: 0;
+  right: auto;
+}
+html:lang(ar) section h2 {
+  font-size: 2rem;
+}
+html:lang(ar) .emoji-note li {
+  float: right;
+}
+html:lang(ar) .emoji-note li p {
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 0.1rem 1.2rem 0 0;
+}
+.cs {
+  margin-left: 4px;
+  margin-bottom: 5px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  border-style: outset;
+  border: 1px solid #eee;
+  background-color: #fff;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  cursor: pointer;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
