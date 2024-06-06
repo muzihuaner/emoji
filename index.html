@@ -10781,6 +10781,45 @@ function disappeare(){
     document.getElementById('status-message').classList.remove("visible");
 }
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    // 获取所有包含 class="cs" 的元素
+    var symbols = document.querySelectorAll('.cs');
+    
+    // 为每个符号添加点击事件
+    symbols.forEach(function(symbol) {
+        symbol.addEventListener('click', function() {
+            // 复制符号文本内容
+            var textToCopy = this.textContent;
+            copyToClipboard(textToCopy);
+        });
+    });
+
+    // 复制到剪贴板的函数
+    function copyToClipboard(text) {
+        var tempInput = document.createElement("input");
+        tempInput.value = text;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+
+        // 可以添加一些用户反馈，比如显示一个提示信息
+        showCopiedMessage(text);
+    }
+
+    // 显示已复制消息的函数
+    function showCopiedMessage(text) {
+        var copiedMessage = document.getElementById('copied-emoji');
+        copiedMessage.innerHTML = text;
+        var statusMessage = document.getElementById('status-message');
+        statusMessage.classList.add('visible');
+        setTimeout(function() {
+            statusMessage.classList.remove('visible');
+        }, 800);
+    }
+});
+
 </script>
  
 </body>
